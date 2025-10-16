@@ -1,4 +1,5 @@
 # React In-class Exam, October 2025
+Sun Zheng Chew, 2025
 
 ## 1. Setup instructions
 
