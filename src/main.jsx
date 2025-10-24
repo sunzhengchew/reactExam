@@ -13,7 +13,6 @@ import AddMovieReviewPage from './pages/addMovieReviewPage'
 import TrendingPage from "./pages/trendingPage";
 import TopRatePage from "./pages/topRatePage";
 
-
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
