@@ -70,6 +70,28 @@ export const getMovie = (args) => {
    });
   };
 
+  export const getTrendingMoviesToday = async () => {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/trending/movie/day?api_key=${import.meta.env.VITE_TMDB_KEY}`
+  );
+  if (!response.ok) {
+    throw new Error("Failed to fetch trending movies");
+  }
+  return await response.json();
+};
+
+export const getTopRateMoviesToday = async () => {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=${import.meta.env.VITE_TMDB_KEY}`
+  );
+  if (!response.ok) {
+    throw new Error("Failed to fetch trending movies");
+  }
+  return await response.json();
+};
+
+
+
 
   export const getMovieReviews = ({ queryKey }) => {
     const [, idPart] = queryKey;
