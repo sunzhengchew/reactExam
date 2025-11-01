@@ -65,7 +65,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
         />
         <Chip
         icon={<SavingsIcon />}
-        label={`Budget:${(movie.revenue / 1_000_000).toFixed(0)}M`}
+        label={`Budget:${(movie.budget / 1_000_000).toFixed(0)}M`}
         />
 
         <Chip label={`Released: ${movie.release_date}`} />
